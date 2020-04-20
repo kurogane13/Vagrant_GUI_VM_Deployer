@@ -19,7 +19,12 @@ Mandatory to run the program:
 Setup and running the program:
 
   - Clone the repository (git clone)
-  - Open the terminal, access the folder, and run the the vagrant_gui.py file from within the folder. python3.x vagrant_gui.py
+  - Open the terminal, access the folder, and run the the vagrant_gui.py file from within the folder. python3.x 
+    vagrant_gui.py
+  
+  - NOTE: The .png files must be copied to the path where the program is launched. Recomended is to copy them to your user   
+    folder, and run the program from your directory. If they are not in the correct path, the program will run, but the 
+    images won´t be seen.
   
 -----------------------------------------------------------------------------------------------------------------------
 About the program. How it works, features and presentation.
