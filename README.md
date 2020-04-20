@@ -27,7 +27,7 @@ About the program. How it works, features and presentation.
 The program is a GUI based software, which deploys vagrant virtual machines. 
 It is an interactive program, which works with forms, charts, user input, and provides data confirmation, validation, and error checking.
 
-  - The first is a Welcome screen which describing the program´s scope.
+  - The first is a Welcome screen which describes the program´s scope.
   - In the following screen you will be required to enter 5 mandatory fields in order to deploy the VM correctly.
   
       - Project Folder Name
