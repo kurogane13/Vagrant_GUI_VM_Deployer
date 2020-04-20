@@ -39,7 +39,7 @@ It is an interactive program, which works with forms, charts, user input, and pr
    - After completing the chart, you will be presented with data confirmation screen.
    
    - Once you confirm it, a gnome terminal will open, and show the created project folder named after      
-     vagrant_project_<name_provided>.
+     vagrant_program_<name_provided>.
      
    - In the next screen, you may select between DHCP or Static Ip assignment. 
    
