@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Linux_Users_and_groups
+Comment=
+Exec=gnome-terminal -- bash /home/gus/Linux_user_groups_management_console/linux_user_groups_management_console.sh
+Icon=/home/gus/Pictures/User_Group.png
+Terminal=false
+Type=Application
+Categories=Application

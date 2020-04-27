@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=JAVA_PYTHON_CONSOLE
+Comment=
+Exec=gnome-terminal -- python3.6 /home/gus/jdk_openjdk_java_javac_installation_v2/java_versions.py
+Icon=/home/gus/jdk_openjdk_java_javac_installation_v2/Screenshots/java_console_image.png
+Terminal=false
+Type=Application
+Categories=Application
