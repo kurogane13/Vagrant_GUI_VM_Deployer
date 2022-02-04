@@ -135,7 +135,7 @@ while (loop==0):
 
                 vagrant_file = "Vagrantfile_copy"#Vargantfile copy variable
                 bootstrapfile = "bootstrap2.sh "#bootstrap apache server file variable
-                publicfolder = "public -r "#public shared synced folder variable
+                publicfoldercmd = "public -r "#public shared synced folder variable
                 webminfolder = "webmin-1.941 -r "
                 webmindebpackage = "webmin_1.941_all.deb "
                 
@@ -144,8 +144,9 @@ while (loop==0):
                 
                 vagrant_project_folder = "vagrant_program_"+project_name#vagrant project folder variable
                 into_new_project = cd+current_path+"/"+vagrant_project_folder+"/"+'\n'#cd into new project folder variable
-                 
-                copy_public_folder = cp+publicfolder+current_path+"/"+vagrant_project_folder+"/"+'\n'#copy public folder into to new project variable
+                
+                publicfolder="/home/gus/Vagrant_GUI_VM_Deployer/"
+                copy_public_folder = cp+" -r "+publicfolder+"public "+current_path+"/"+vagrant_project_folder+"/"+'\n'#copy public folder into to new project variable
                 copy_webmin_folder = cp+webminfolder+current_path+"/"+vagrant_project_folder+"/"+"public"+'\n'#copy webmin server folder
                 
                 folder_creation_file_bash = open('create_folder_project.sh', 'w')#create folder project bash file
@@ -245,7 +246,7 @@ while (loop==0):
                                 if forwardportnumber is not None:
                                     good = "good.png"
                                     title = "PORT NUMBER PROVIDED"
-                                    msg = "THE PROVIDED PORT NUMBER IS: "+str(forwardportnumber)+".\n\n\n                  * NEXT, YOU WILL CONFIRM T NOT THE DHCP IP ASSIGNMENT\n\n\n                  ---> CONFIRM PORT NUMBER AND GO TO NEXT SCREEN?\n\n\nWARNING: CLICKING ON THE IMAGE WILL TAKE YOU BACK TO THE CHART"
+                                    msg = "THE PROVIDED PORT NUMBER IS: "+str(forwardportnumber)+".\n\n\n                  * NEXT, YOU WILL BE CONFIRMING THE DHCP IP ASSIGNMENT\n\n\n                  ---> CONFIRM PORT NUMBER AND GO TO NEXT SCREEN?\n\n\nWARNING: CLICKING ON THE IMAGE WILL TAKE YOU BACK TO THE CHART"
                                     choices = ["Yes", "No"]
                                     choice = buttonbox(msg, title, choices, image=good)
                                     forwardportnumber = str(forwardportnumber)
